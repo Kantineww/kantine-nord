@@ -18,9 +18,9 @@
            Daten auf dem iPad bleiben dabei erhalten.
            ################################################################ */
         const ABTEILUNGEN = {
-            a1: { name: "Abteilung 1", pin: "1111", verwaltungsPin: "1234" },
-            a2: { name: "Abteilung 2", pin: "2222", verwaltungsPin: "2345" },
-            a3: { name: "Abteilung 3", pin: "3333", verwaltungsPin: "3456" }
+            a1: { name: "Abteilung 1", pin: "1111", verwaltungsPin: "1111" },
+            a2: { name: "Abteilung 2", pin: "2222", verwaltungsPin: "2222" },
+            a3: { name: "Abteilung 3", pin: "3333", verwaltungsPin: "3333" }
         };
 
         const WACHE_NAME = "Wache Nord";
