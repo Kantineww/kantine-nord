@@ -1653,15 +1653,9 @@
             }
 
             // Setze Einkaufsliste zurück
-            einkaufsliste = {
-                brötchen_normal: 0,
-                brötchen_mehrkorn: 0,
-                brötchen_sunny: 0,
-                brötchen_roggen: 0,
-                ei: 0,
-                abendessen_normal: 0,
-                abendessen_vegetarisch: 0
-            };
+           Object.keys(einkaufsliste).forEach(typ => {
+    einkaufsliste[typ] = 0;
+});
 
             // Lösche alle Benutzer-Tagesbestellungen
             for (const kategorie in benutzer) {
