@@ -1266,6 +1266,13 @@
             // (Guthaben kann negativ werden = Schulden)
             aktuellerBenutzer.guthaben -= summe;
 
+// Fehlende Zähler für Produkte mit Einkaufslisten-Haken wieder anlegen
+alleProdukteFlach.forEach(produkt => {
+    if (produkt.typ && produkt.typ !== 'sonstiges' && !einkaufsliste.hasOwnProperty(produkt.typ)) {
+        einkaufsliste[produkt.typ] = 0;
+    }
+});
+
             // SCHRITT 5: Aktualisiere Einkaufsliste
             // Nur Produkte mit passendem "typ" werden gezählt
             // "sonstiges" wird NICHT gezählt
